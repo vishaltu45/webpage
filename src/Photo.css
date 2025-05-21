@@ -1,0 +1,167 @@
+
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  overflow: hidden;
+}
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.start-button {
+  background: white;
+  color: #6e8efb;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.flipbook-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/photos/albumbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.page {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.cover-page, .end-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.cover-title, .end-title {
+  margin: 0;
+}
+
+.photo-caption {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.flipbook-wrapper {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+.cover-page, .end-page {
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.cover-title, .end-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  z-index: 1;
+  margin: 0.5rem 0;
+}
+
+.cover-subtitle, .end-subtitle {
+  font-size: 1rem;
+  color: #555;
+  z-index: 1;
+}
+
+.photo-page .spiral-binding,
+.cover-page .spiral-binding,
+.end-page .spiral-binding {
+ position: absolute;
+  left: -15px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background-image: url('/photos/spiral.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: center;
+  z-index: 10; /* MUST be above the image */
+  filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.cover-page, .end-page, .photo-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.full-page-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Or object-fit: fill if you want to stretch */
+  z-index: 1;
+}
