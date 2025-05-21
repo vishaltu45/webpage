@@ -21,7 +21,7 @@ const cardData = [
     img: "./photos/picture1.jpg",
     title: "PHOTO ALBUM",
     message: "Thats all I got",
-    link: "./webpage/album"
+    link: "/webpage/album"
 
   },
   {
