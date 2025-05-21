@@ -96,7 +96,7 @@ const BirthdayMessage = () => {
         
       {/* Background Video */}
       <video className="background-video" autoPlay loop muted playsInline>
-        <source src="./gradient.mp4" type="video/mp4" />
+        <source src=".photos/gradient.mp4" type="video/mp4" />
       </video>
       <div className="glass-background-overlay">
        
