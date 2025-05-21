@@ -6,14 +6,14 @@ import Photo from "./Photo";
 
 function App() {
   return (
-    <Router>
+    
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/cake" element={<CakePage />} />
         <Route path="/birthday" element={<BirthdayMessage />} /> {/* ✅ Add this */}
         <Route path="/album" element={<Photo />} />
       </Routes>
-    </Router>
+    
   );
 }
 

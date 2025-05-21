@@ -25,7 +25,7 @@ const photos = [
   // Add up to 20
 ];
 
-const flipSound = new Audio('/sounds/page.mp3');
+const flipSound = new Audio('./sounds/page.mp3');
 
 function FlipbookAlbum() {
   const book = useRef();
