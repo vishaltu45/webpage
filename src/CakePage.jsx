@@ -29,7 +29,7 @@ function CakePage() {
 
 
   useEffect(() => {
-  const audio = new Audio('/sounds/confettiSound.mp3');
+  const audio = new Audio('./sounds/confettiSound.mp3');
   audio.loop = true;
   audio.play().catch((err) => console.log("Audio play blocked:", err));
 
