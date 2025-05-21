@@ -21,7 +21,8 @@ const cardData = [
     img: "./photos/picture1.jpg",
     title: "PHOTO ALBUM",
     message: "Thats all I got",
-    link: "./album"
+    link: "./webpage/album"
+
   },
   {
     img: "./photos/motivation.png",
@@ -95,7 +96,7 @@ const BirthdayMessage = () => {
         
       {/* Background Video */}
       <video className="background-video" autoPlay loop muted playsInline>
-        <source src="/gradient.mp4" type="video/mp4" />
+        <source src="./gradient.mp4" type="video/mp4" />
       </video>
       <div className="glass-background-overlay">
        
